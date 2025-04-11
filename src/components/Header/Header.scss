@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 20px 100px;
+
+    @media (max-width: 899px) {
+        padding: 20px 50px;
+    }
+
+    .logo-container {
+        .logo {
+            width: 180px;
+        }
+
+        @media (max-width: 899px) {
+            width: 120px;
+          }
+    }
+
+    .nav-links {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       font-weight: bold;
+       font-size: 20px;
+
+       @media (max-width: 899px) {
+        display: none;
+      }
+
+       .nav-link {
+        padding: 10px 30px;
+        user-select: none;
+       }
+    }
+
+}
+
+
+
+
+
