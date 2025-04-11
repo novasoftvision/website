@@ -11,7 +11,7 @@ const Intro = () => {
           to life. Every pixel, every line of code, and every system we build is
           fueled by curiosity, crafted with care, and driven by purpose. As a
           tight-knit team of thinkers, builders, and dreamers, we turn complex
-          problems into elegant digital solutions.
+          problems into elegant digital solutions. <strong>Stay tuned!</strong> 💡✨
         </div>
         <div className="buttons-1">
           <button className="btn-1">Get a Quote</button>
