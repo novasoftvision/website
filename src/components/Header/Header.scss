@@ -1,3 +1,5 @@
+@use 'src/styles/variables' as *;
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -7,7 +9,14 @@
     
     padding: 20px 100px;
 
-    @media (max-width: 899px) {
+    @media (max-width: 599px) {
+        padding: 20px 50px;
+        justify-content: center;
+        background-color: $primary-color;
+
+    }
+
+    @media (min-width: 600px) and (max-width: 899px) {
         padding: 20px 50px;
     }
 
@@ -18,7 +27,7 @@
 
         @media (max-width: 899px) {
             width: 120px;
-          }
+        }
     }
 
     .nav-links {
