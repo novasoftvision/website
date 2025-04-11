@@ -7,17 +7,17 @@ const Header = () => {
     <header>
       <nav className="navbar">
         <div className="logo-container">
-          <img className="logo" src="logo.png" alt="Logo" />
+          <a href="/"><img className="logo" src="logo.png" alt="Logo" /></a>
         </div>
         <ul className="nav-links">
           <li className="nav-link">
-            <a href="About" >About</a>
+            <a href="/" >About</a>
           </li>
           <li className="nav-link">
-            <a href="Services">Services</a>
+            <a href="/">Services</a>
           </li>
           <li className="nav-link">
-            <a href="Contact">Contact Us</a>
+            <a href="/">Contact Us</a>
           </li>
         </ul>
       </nav>
