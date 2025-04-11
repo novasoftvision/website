@@ -1,0 +1,8 @@
+@use 'src/styles/variables' as *;
+
+.home {
+    width: 100vw;
+    flex-grow: 1;
+
+    background-color: $primary-color;
+}

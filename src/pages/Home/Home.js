@@ -1,10 +1,11 @@
 import React from 'react';
+import './Home.scss';
+import Intro from '../../components/Intro/Intro';
 
 const Home = () => {
     return (
-        <div>
-            <h1>Welcome to the Home Page</h1>
-            <p>This is the home page of your website.</p>
+        <div className="home">
+            <Intro/>
         </div>
     );
 };
