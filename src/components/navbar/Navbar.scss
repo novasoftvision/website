@@ -1,0 +1,85 @@
+@use "src/styles/variables" as *;
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    .container-top {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+
+        .navbar {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+        
+        
+            .nav-links {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                font-weight: bold;
+                
+                font-size: 24px;
+                color: $primary-color;
+        
+                @media (max-width: 899px) {
+                    display: none;
+                }
+        
+                .nav-link {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 10px 30px;
+                    user-select: none;
+                    transform: translateY(-5px);
+                    transition: transform 0.3s ease-in-out;
+                    &:hover {
+                        //transform: scale(1.05);
+                        //transition: transform 0.3s ease-in-out;
+
+                        .link-arrow {
+                            //transform: translateY(-5px);
+                            //transition: transform 0.3s ease-in-out;
+                        }
+                    }
+
+                    .link-arrow {
+                        width: 18px;
+                        height: 18px;
+                        margin-left: 10px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .container-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        .rocket {
+            width: 600px;
+            height: 600px;
+
+            @media (min-width: 1299px) {
+                width: 700px;
+                height: 700px;
+            }
+
+        }
+    }
+}
+
