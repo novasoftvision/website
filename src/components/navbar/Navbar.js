@@ -1,36 +1,32 @@
 import React from "react";
 import "./Navbar.scss";
-import { Player } from "@lottiefiles/react-lottie-player";
 
 const Navbar = () => {
   return (
-    <div className="nav-container">
-      <div className="container-top">
-        <nav className="navbar">
-          <ul className="nav-links">
-            <li className="nav-link">
-              <a href="/">About</a>
-              <img src="arrow-up-right.png" className="link-arrow" alt="Link Arrow"/>
-            </li>
-            <li className="nav-link">
-              <a href="/">Services</a>
-              <img src="arrow-up-right.png" className="link-arrow" alt="Link Arrow"/>
-            </li>
-            <li className="nav-link">
-              <a href="/">Contact Us</a>
-              <img src="arrow-up-right.png" className="link-arrow" alt="Link Arrow"/>
-            </li>
-          </ul>
-        </nav>
+    <div className="container-nav">
+      <div className="container-logo">
+        <a href="/">
+          <img className="logo" src="logo.png" alt="Novasoft Vision Inc. Logo" />
+        </a>
       </div>
-
-      <div className="container-bottom">
-        <Player
-          autoplay
-          loop
-          src="a.json"
-          className="rocket"
-        />
+      <div></div>
+      <div className="container-links">
+        <div className="menu-ham">
+            <div className="line-ham"></div>
+            <div className="line-ham"></div>
+            <div className="line-ham"></div>
+        </div>
+        <ul className="links">
+          <li className="nav-link">
+            <a href="#about">ABOUT</a>
+          </li>
+          <li className="nav-link">
+            <a href="#services">SERVICES</a>
+          </li>
+          <li className="nav-link">
+            <a href="#contact">CONTACT US</a>
+          </li>
+        </ul>
       </div>
     </div>
   );

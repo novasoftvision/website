@@ -16,19 +16,11 @@ html {
 }
 
 body {
-  line-height: 1.5;
+  line-height: 1.25;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-
-  @media (max-width: 599px) {
-    font-size: 14px;
-  }
   
-  @media (min-width: 600px) and (max-width: 899px) {
-    font-size: 16px;
-  }
 }
 
 ol, ul {
@@ -37,14 +29,8 @@ ol, ul {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: black;
   cursor: pointer;
-}
-
-figure,
-blockquote {
-  margin: 0;
-  padding: 0;
 }
 
 button,

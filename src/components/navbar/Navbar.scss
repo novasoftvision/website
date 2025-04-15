@@ -1,85 +1,60 @@
-@use "src/styles/variables" as *;
+@use 'src/styles/variables' as *;
 
-.nav-container {
+
+.container-nav {
     width: 100%;
-    height: 100%;
+    max-width: 1024px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to bottom, white 80%, transparent);
+
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
 
-    .container-top {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content:center;
+    .container-logo {
+        .logo {
+            width: 8rem;
+            padding-left: 0.5rem;
 
-        .navbar {
-            margin: 20px 0;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            align-items: center;
-        
-        
-            .nav-links {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                font-weight: bold;
-                
-                font-size: 24px;
-                color: $primary-color;
-        
-                @media (max-width: 899px) {
-                    display: none;
-                }
-        
-                .nav-link {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    padding: 10px 30px;
-                    user-select: none;
-                    transform: translateY(-5px);
-                    transition: transform 0.3s ease-in-out;
-                    &:hover {
-                        //transform: scale(1.05);
-                        //transition: transform 0.3s ease-in-out;
-
-                        .link-arrow {
-                            //transform: translateY(-5px);
-                            //transition: transform 0.3s ease-in-out;
-                        }
-                    }
-
-                    .link-arrow {
-                        width: 18px;
-                        height: 18px;
-                        margin-left: 10px;
-                        
-                    }
-                }
+            @media (min-width: 1025px) {
+                width: 10rem;
             }
         }
     }
 
-    .container-bottom {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-
-        .rocket {
-            width: 600px;
-            height: 600px;
-
-            @media (min-width: 1299px) {
-                width: 700px;
-                height: 700px;
+    .container-links {
+        margin-right: 0.5rem;
+        .menu-ham {
+            padding-right: 0.5rem;
+            cursor: pointer;
+            .line-ham {
+                width: 20px;
+                height: 2px;
+                background-color: $color-3;
+                margin: 5px 0;
             }
 
+            @media (min-width: 1025px) {
+                display: none;
+            }
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+
+            font-weight: 600 ;
+            @media (max-width: 1024px) {
+                display: none;
+            }
         }
     }
 }
-

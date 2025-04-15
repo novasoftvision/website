@@ -1,19 +1,24 @@
 import React from "react";
 import "./Home.scss";
-import Navbar from "../../components/navbar/Navbar";
 import About from "../../components/about/About";
+import Services from "../../components/services/Services";
+import Process from "../../components/process/Process";
+import Contact from "../../components/contact/Contact";
+import Footer from "../../components/footer/Footer";
+import Tech from "../../components/tech/Tech";
 
 const Home = () => {
   return (
     <div className="home">
-      <section className="section-1">
-        <div className="left-container">
-          <About />
-        </div>
-        <div className="right-container">
-          <Navbar />
-        </div>
-      </section>
+      <main className="main">
+        <About/>
+        <Services/>
+        <Process/>
+        <Tech/>
+        <Contact/>
+        <section className="Promise"/>
+      </main>
+      <Footer/>
     </div>
   );
 };
