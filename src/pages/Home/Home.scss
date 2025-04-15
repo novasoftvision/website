@@ -2,7 +2,17 @@
 
 .home {
     width: 100vw;
-    flex-grow: 1;
+    height: 100vh;
+    overflow-x: hidden;
 
-    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .main {
+        width: 100%;
+        max-width: 1024px;
+        padding-top: 100px;
+    }
 }

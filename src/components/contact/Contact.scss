@@ -1,0 +1,83 @@
+@use 'src/styles/variables' as *;
+
+.contact {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+
+    .container-contact {
+        margin: 1rem;
+        background-color: $color-2;
+
+        .contact-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 1rem;
+
+            .contact-img {
+                width: 25px;
+            }
+
+            .custom-padding {
+                padding: 0.5rem 1rem;
+            }
+        }
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            width: 100%;
+
+            .form-elem {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+                width: 100%;
+            }
+        }
+
+        .form-desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            padding: 1rem;
+            .input {
+                width: 100%;
+            }
+
+
+        }
+
+        .contact-button {
+            margin-top: 1rem;
+            padding: 0.5rem 2rem;
+            font-weight: 700;
+            background-color: $color-4;
+            border-radius: 15px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            color: white;
+            margin-bottom: 1rem;
+
+        }
+
+    }
+}

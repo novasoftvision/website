@@ -1,13 +1,12 @@
 import React from "react";
-import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
+import Navbar from "./components/navbar/Navbar";
 import { Route, Routes } from "react-router";
-import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
