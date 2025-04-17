@@ -43,6 +43,12 @@ return (
                 <div className="container-2 tech-wrapper">
                     <img src="react native.png" alt="React Native Logo" />
                 </div>
+                <div className="container-2 tech-wrapper">
+                    <img src="js.png" alt="React Native Logo" />
+                </div>
+                <div className="container-2 tech-wrapper">
+                    <img src="power bi.png" alt="React Native Logo" />
+                </div>
             </div>
             <div className="title-2">Let's build great things together! And More!</div>
         </div>
