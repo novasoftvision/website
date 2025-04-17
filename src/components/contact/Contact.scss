@@ -10,7 +10,9 @@
 
     .container-contact {
         margin: 1rem;
+        margin-right: 0.5rem;
         background-color: $color-2;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
         .contact-info {
             display: flex;
@@ -36,6 +38,8 @@
         justify-content: center;
         align-items: center;
         margin: 1rem;
+        margin-left: 0.5rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
         .form-group {
             display: flex;
