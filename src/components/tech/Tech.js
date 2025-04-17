@@ -44,8 +44,7 @@ return (
                     <img src="react native.png" alt="React Native Logo" />
                 </div>
             </div>
-            <div className="title-2">Let's build great things together!</div>
-            <div className="title-2">And More!</div>
+            <div className="title-2">Let's build great things together! And More!</div>
         </div>
     </div>
 );

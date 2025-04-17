@@ -9,7 +9,7 @@ const Contact = () => {
         <div className="container-1 container-contact">
           <div className="text-1">
             <strong>Tell us about your challenge ! </strong>Our team will get
-            back to you with tailored insights, <strong>fast</strong> 🚀.
+            back to you with tailored insights, <strong>fast</strong>.
           </div>
           <div className="contact-info">
             <img className="contact-img" src="location.png" alt="" />
@@ -33,7 +33,7 @@ const Contact = () => {
           <div className="contact-info">
             <img className="contact-img" src="linkedin.png" alt="" />
             <div className="text-1 custom-padding">
-              linkedin.com/company/novasoft-vision
+              <a href="https://www.linkedin.com/company/novasoft-vision/">linkedin.com/company/novasoft-vision</a>
             </div>
           </div>
         </div>
