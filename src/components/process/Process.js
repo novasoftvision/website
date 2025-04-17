@@ -12,19 +12,19 @@ const Process = () => {
         </div>
         <div className="process">
           <div className="container-2">
-            <div className="title-2">01 YOU ASK</div>
+            <div className="title-2">01 YOU ENVISION</div>
             <img className="process-img" src="ask.png" alt="" />
           </div>
           <div className="container-2">
-            <div className="title-2">02 NEGOCIATE</div>
+            <div className="title-2">02 WE PLAN</div>
             <img className="process-img" src="proceed.png" alt="" />
           </div>
           <div className="container-2">
-            <div className="title-2">03 WE CREATE</div>
+            <div className="title-2">03 WE BUILD</div>
             <img className="process-img" src="negociate.png" alt="" />
           </div>
           <div className="container-2">
-            <div className="title-2">04 YOU GET</div>
+            <div className="title-2">04 YOU SUCCEED</div>
             <img className="process-img" src="get.png" alt="" />
           </div>
         </div>
