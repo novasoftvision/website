@@ -5,11 +5,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-contact">
-        </div>
+        <div className="footer-contact"></div>
         <div>
-          &copy; {new Date().getFullYear()} Novasoft Vision Inc. All rights
-          reserved.
+          <p>
+            &copy; {new Date().getFullYear()} Novasoft Vision Inc. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>

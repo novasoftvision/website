@@ -9,27 +9,30 @@ const Contact = () => {
 
   return (
     <div id="contact" className="section">
-      <div className="title-1">Contact Us</div>
+      <h1 className="title-1">Contact Us</h1>
       <div className="container-1 contact">
         <div className="container-1 container-contact">
           <div className="text-1">
-            <strong>Tell us about your challenge ! </strong>Our team will get
-            back to you with tailored insights, <strong>fast</strong>.
+            <p>
+              <strong>Tell us about your challenge ! </strong>Our team will get
+              back to you with tailored insights, <strong>fast</strong>.
+            </p>
           </div>
           <div className="contact-info">
             <img className="contact-img" src="location.png" alt="" />
             <div className="text-1 custom-padding">
-              760 Place De Monaco Laval, Quebec, Canada
+              <p>760 Place De Monaco Laval, Quebec, Canada</p>
             </div>
           </div>
           <div className="contact-info">
             <img className="contact-img" src="phone.png" alt="" />
-            <div className="text-1 custom-padding">+1 (438)-458-0018</div>
+            <div className="text-1 custom-padding">
+              <p>+1 (438)-458-0018</p></div>
           </div>
           <div className="contact-info">
             <img className="contact-img" src="email.png" alt="" />
             <div className="text-1 custom-padding">
-              contact@novasoftvision.ca
+              <p>contact@novasoftvision.ca</p>
             </div>
           </div>
           <div className="contact-info">
