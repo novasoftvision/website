@@ -4,11 +4,14 @@ import "./Process.scss";
 const Process = () => {
   return (
     <div className="section">
-      <div className="title-1">Easy process</div>
+      <h1 className="title-1">Easy process</h1>
       <div className="container-1">
         <div className="text-1">
-          We specialize in helping you turn complex challenges into smart,
-          scalable solutions.
+          <p>
+            {" "}
+            We specialize in helping you turn complex challenges into smart,
+            scalable solutions.
+          </p>
         </div>
         <div className="process">
           <div className="container-2">

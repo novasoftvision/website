@@ -4,7 +4,7 @@ import "./Tech.scss";
 const Tech = () => {
 return (
     <div className="section">
-        <div className="title-1">Tools & Technology We Rely On</div>
+        <h1 className="title-1">Tools & Technology We Rely On</h1>
         <div className="container-1 tech">
             <div className="container-tech">
                 <div className="container-2 tech-wrapper">
