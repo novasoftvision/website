@@ -2,10 +2,6 @@ import React from "react";
 import "./Contact.scss";
 
 const Contact = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent the default form submission behavior
-    alert("Your message has been sent successfully!");
-  };
 
   return (
     <div id="contact" className="section">
@@ -27,7 +23,8 @@ const Contact = () => {
           <div className="contact-info">
             <img className="contact-img" src="phone.png" alt="" />
             <div className="text-1 custom-padding">
-              <p>+1 (438)-458-0018</p></div>
+              <p>+1 (438)-458-0018</p>
+            </div>
           </div>
           <div className="contact-info">
             <img className="contact-img" src="email.png" alt="" />
@@ -44,7 +41,15 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form className="container-1 form" onSubmit={handleSubmit}>
+        <form
+          className="container-1 form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/"
+        >
+          {/* Hidden input for Netlify to recognize the form */}
+          <input type="hidden" name="form-name" value="contact" />
           <div className="form-group">
             <div className="form-elem">
               <label htmlFor="company">Company</label>
