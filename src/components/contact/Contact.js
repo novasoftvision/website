@@ -45,7 +45,7 @@ const Contact = () => {
           name="contact"
           method="POST"
           data-netlify="true"
-          action="/"
+          action="/MessageReceived"
         >
           {/* Hidden input for Netlify to recognize the form */}
           <input type="hidden" name="form-name" value="contact" />
