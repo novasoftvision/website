@@ -1,0 +1,38 @@
+@use 'src/styles/variables' as *;
+
+.message-received {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .container-top {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .btn-main-page {
+            margin-top: 1rem;
+            padding: 0.5rem 2rem;
+            font-weight: 700;
+            background-color: $color-4;
+            border-radius: 15px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            color: white;
+            margin-bottom: 1rem;
+
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+}

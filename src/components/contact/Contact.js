@@ -2,7 +2,6 @@ import React from "react";
 import "./Contact.scss";
 
 const Contact = () => {
-
   return (
     <div id="contact" className="section">
       <h1 className="title-1">Contact Us</h1>
@@ -46,7 +45,7 @@ const Contact = () => {
           name="contact"
           method="POST"
           data-netlify="true"
-          action="/"
+          action="/MessageReceived"
         >
           {/* Hidden input for Netlify to recognize the form */}
           <input type="hidden" name="form-name" value="contact" />
@@ -106,6 +105,15 @@ const Contact = () => {
           <button className="contact-button" type="submit">
             Send
           </button>
+          {/* FOR DEBUGGING
+          <button
+            className="contact-button"
+            type="button"
+            onClick={() => (window.location.href = "/MessageReceived")}
+          >
+            Go to Message Received
+          </button>
+          */}
         </form>
       </div>
     </div>
