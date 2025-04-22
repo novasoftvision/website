@@ -48,7 +48,7 @@ const Contact = () => {
           action="/MessageReceived"
         >
           {/* Hidden input for Netlify to recognize the form */}
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contact-us" />
           <div className="form-group">
             <div className="form-elem">
               <label htmlFor="company">Company</label>
