@@ -42,7 +42,7 @@ const Contact = () => {
         </div>
         <form
           className="container-1 form"
-          name="contact"
+          name="contact-us"
           method="POST"
           data-netlify="true"
           action="/MessageReceived"
