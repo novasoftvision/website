@@ -8,7 +8,6 @@ const Process = () => {
       <div className="container-1">
         <div className="text-1">
           <p>
-            {" "}
             We specialize in helping you turn complex challenges into smart,
             scalable solutions.
           </p>

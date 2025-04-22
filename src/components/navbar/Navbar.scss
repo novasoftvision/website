@@ -1,61 +1,70 @@
 @use 'src/styles/variables' as *;
 
-
-.container-nav {
+.wrapper-nav {
     width: 100%;
-    max-width: 1024px;
+    display: flex;
+    justify-content: center;
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(to bottom, white 80%, transparent);
+    left: 0;
+    z-index: 999;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    font-size: 1rem;
-
-    .container-logo {
-        .logo {
-            width: 8rem;
-            padding-left: 0.5rem;
+    background-color: $color-1;
+    .container-nav {
+        width: 100%;
+        max-width: 1024px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        padding-right: 2.5rem;
+        font-size: 1rem;
+        .container-logo {
+            .logo {
+                width: 8rem;
+                user-select: none;
+    
+                @media (min-width: 1025px) {
+                    width: 10rem;
+                }
+            }
+        }
+    
+        .container-links {
             user-select: none;
-
-            @media (min-width: 1025px) {
-                width: 10rem;
+            .menu-ham {
+                padding-right: 0.5rem;
+                cursor: pointer;
+                .line-ham {
+                    width: 20px;
+                    height: 2px;
+                    background-color: $color-3;
+                    margin: 5px 0;
+                }
+    
+                @media (min-width: 1025px) {
+                    display: none;
+                }
             }
-        }
-    }
+    
+            .links {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+                
 
-    .container-links {
-        user-select: none;
-        margin-right: 0.5rem;
-        .menu-ham {
-            padding-right: 0.5rem;
-            cursor: pointer;
-            .line-ham {
-                width: 20px;
-                height: 2px;
-                background-color: $color-3;
-                margin: 5px 0;
-            }
-
-            @media (min-width: 1025px) {
-                display: none;
-            }
-        }
-
-        .links {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 1rem;
-
-            font-weight: 600 ;
-            @media (max-width: 1024px) {
-                display: none;
+                font-weight: 600 ;
+                @media (max-width: 1024px) {
+                    display: none;
+                }
+    
+                .nav-link {
+                    cursor: pointer;
+                    user-select: none;
+                }
             }
         }
     }

@@ -16,7 +16,6 @@ const Home = () => {
         <Process/>
         <Tech/>
         <Contact/>
-        <section className="Promise"/>
       </main>
       <Footer/>
     </div>
