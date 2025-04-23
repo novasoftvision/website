@@ -40,25 +40,20 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form
-          className="container-1 form"
-          name="contact-us"
-          method="POST"
-          data-netlify="true"
-          action="/MessageReceived"
-        >
-          {/* Hidden input for Netlify to recognize the form */}
-          <input type="hidden" name="form-name" value="contact-us" />
+        <form name="contact" method="POST" className="container-1 form" netlify>
+          <input type="hidden" name="form-name" value="contact" />
           <div className="form-group">
             <div className="form-elem">
-              <label htmlFor="company">Company</label>
-              <input
-                className="input"
-                type="text"
-                id="company"
-                name="company"
-                required
-              />
+              <label htmlFor="company">
+                Company{" "}
+                <input
+                  className="input"
+                  type="text"
+                  id="company"
+                  name="company"
+                  required
+                />
+              </label>
             </div>
             <div className="form-elem">
               <label htmlFor="name">Name</label>
