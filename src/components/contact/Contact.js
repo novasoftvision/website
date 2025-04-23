@@ -42,6 +42,7 @@ const Contact = () => {
         </div>
         <form name="contact" method="POST" className="container-1 form" netlify>
           <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="bot-field" />
           <div className="form-group">
             <div className="form-elem">
               <label htmlFor="company">
